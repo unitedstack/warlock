@@ -11,7 +11,7 @@ function main(app, clientApps, currentView, viewPlugins) {
 
 function haloProcessor(user, HALO) {
   HALO.application.application_list = HALO.application.application_list.filter(e => {
-    return HALO.settings.enable_object_storage ? true : e !== 'object_storage';
+    return HALO.settings.enable_object_storage ? true : e !== 'storage';
   });
 }
 
